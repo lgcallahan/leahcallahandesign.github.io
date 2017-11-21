@@ -50,20 +50,15 @@ body {
 // ******** HEADER **********
 
 header {
-  background: rgba(254,254,254,1);
-background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,0.29) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,254,254,1)), color-stop(100%, rgba(254,254,254,0.29)));
-background: -webkit-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,0.29) 100%);
-background: -o-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,0.29) 100%);
-background: -ms-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,0.29) 100%);
-background: linear-gradient(to bottom, rgba(254,254,254,1) 0%, rgba(254,254,254,0.29) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#fefefe', GradientType=0 );
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   height: 3rem;
   z-index: 10;
+  background-color: $white;
+  opacity: .7; 
+
 
   .header-text {
     img {
@@ -323,16 +318,34 @@ figure:hover .fade-caption {
   }
 
   .about-headshot-container {
-
     @media screen and (max-width: 640px) {
         order: 2;
     }
 
-    img {
+    .headshot {
       // padding: 0 0 1rem 1rem;
+      width: 300px;
+      height: 360px;
+      background: url("../img/main/headshot_1.jpg") no-repeat;
+      // display: inline-block;
       float: right;
+      &:hover { 
+      background: url("../img/main/headshot_2.jpg") no-repeat;
+      }
       @media screen and (max-width: 640px) {
         padding: 0;
+      }
+    }
+    button {
+      float: right; 
+      margin-top: 2rem;
+      @media screen and (max-width: 640px) {
+        margin-right: 20px; 
+        margin-top: 13px; 
+      }
+      @media screen and (max-width: 498px) {
+        margin-right: 0px;
+        margin-top: 33px; 
       }
     }
 
