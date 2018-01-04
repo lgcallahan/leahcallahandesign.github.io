@@ -1,0 +1,85 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3rem;
+    z-index: 10;
+    background-color: $white;
+    opacity: .7; 
+    .header-text {
+        img {
+            width: 27rem;
+            position: absolute;
+            top: 14px;
+            left: 15px;
+            @media screen and (max-width: 615px){
+                width: 22rem;
+            }
+        }
+    }
+    .social-media {
+        ul {
+            position: fixed;
+            top: 10px;
+            right: 20px;
+        li {
+            list-style: none;
+            width: 1.5rem;
+            opacity: 0.2;
+            margin: 14px;
+            transition: 0.5s ease;
+        a {
+            padding: 0px;
+        }
+        &:hover {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .social-media {
+    display: none;
+  }
+}
+
+.main {
+     position: relative;
+    .main-logo {
+        img {
+        width: 100%;
+        max-width: 1680px;
+        display: block;
+        margin: 10vw auto 0;
+        @media screen and (max-width: 670px) {
+            margin-top: 24vw;
+        }
+        }
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 35vw;
+            display: block;
+            margin: 10vw auto;
+        }
+        .cls-1 {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: dash 10s linear alternate;
+            transition: 1s ease;
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 1000;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    }
+}
