@@ -11,7 +11,10 @@
             .intro-light {
                 font-family: 'Helvetica', sans-serif;
                 font-weight: 100; 
-                font-size: 22px
+                font-size: 22px;
+                @media screen and (max-width: 650px) {
+                    font-size: 18px; 
+                }
             }
             .intro-bold {
                 font-family: 'Montserrat', sans-serif;
@@ -19,6 +22,9 @@
                 text-transform: uppercase;
                 font-size: 25px;
                 letter-spacing: 2px; 
+                @media screen and (max-width: 650px) {
+                    font-size: 18px; 
+                }
             }
             @media screen and (max-width: 650px) {
                 padding: 0 2rem;

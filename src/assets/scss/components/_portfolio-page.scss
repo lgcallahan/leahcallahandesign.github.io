@@ -4,13 +4,12 @@
     width: 100%;
     margin-bottom: 0;
     color: #7A797A;
-    @media screen and (max-width: 640px){
+    @media screen and (max-width: 640px) {
         padding: 1rem;
         padding-top: 4rem;
-        }   
+    }
     p {
-        font-family: 'Roboto', sans-serif;
-        // color: $dark-gray;
+        font-family: 'Roboto', sans-serif; // color: $dark-gray;
     }
     .portfolio-content-header {
         padding-right: 0.9375rem;
@@ -26,22 +25,22 @@
         }
     }
 }
-  
+
 .portfolio-images {
     img {
         display: block;
         margin: 5rem auto;
         width: 70%;
-    @media screen and (max-width: 640px){
-        width: 100%;
-        margin: 1rem 0rem;
+        @media screen and (max-width: 640px) {
+            width: 100%;
+            margin: 1rem 0rem;
         }
     }
     video {
         display: block;
         margin: 5rem auto;
         width: 70%;
-        @media screen and (max-width: 640px){
+        @media screen and (max-width: 640px) {
             width: 100%;
             margin: 1rem 0rem;
         }
@@ -56,19 +55,18 @@
         }
     }
 }
-  
+
 ul {
     margin-left: 0px;
     .team-members-group {
-    // padding: 0px;
+        // padding: 0px;
     }
     .team-members-group-2 li:first-child {
-    color: $white;
+        color: $white;
     }
     li {
-    list-style: none;
-    font-family: 'Roboto', sans-serif;
-    // color: $dark-gray;
+        list-style: none;
+        font-family: 'Roboto', sans-serif; // color: $dark-gray;
     }
 }
 
@@ -78,14 +76,49 @@ ul {
 
 .button-in {
     margin-left: 20px;
+} //
+//
+// .headshot-container {
+//   img{
+//     border: 3px solid black;
+//   }
+// }
+.previous-button,
+.next-button {
+    img {
+        width: 40px;
+        opacity: .7;
+        transition: .5s ease;
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
 }
-  //
-  //
-  // .headshot-container {
-  //   img{
-  //     border: 3px solid black;
-  //   }
-  // }
-  
 
-  
+.previous-button {
+    transform: rotate(90deg);
+}
+
+.next-button {
+    transform: rotate(-90deg);
+}
+
+.previous-next-buttons {
+    // position: absolute; 
+    // bottom: 30px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3rem 5rem;
+    @media screen and (max-width: 640px) {
+        margin: 5rem 3rem;
+    }
+}
+
+.previous-next-buttons-top {
+    margin: 5rem 5rem -6rem;
+    @media screen and (max-width: 640px) {
+        margin: 5rem 3rem -3rem;
+    }
+}
