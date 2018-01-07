@@ -122,3 +122,23 @@ ul {
         margin: 5rem 3rem -3rem;
     }
 }
+
+// .group-in {
+//     margin-left: .25rem; 
+// }
+
+.group-out {
+    margin-left: 0px !important;
+}
+
+.paragraph-links {
+    a {
+        padding: 0px;
+        font-weight: 600;
+        transition: .5s ease; 
+        &:hover {
+            color: #7A797A;
+            border-bottom: 1px solid #7A797A;
+        }
+    }
+}

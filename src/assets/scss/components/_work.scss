@@ -6,6 +6,10 @@ figure img {
     -o-transition: all 300ms ease-out;
     -ms-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
+    &:hover {
+        -webkit-filter: blur(500px);
+        filter: blur(500px);
+    }
 }
   
 figure .caption {
@@ -22,9 +26,13 @@ figure .caption {
     text-align: center;
     padding: 15px;
     h3 {
-        width: 85%;
-        display: block;
-        margin: 0 auto;
+        // width: 85%;
+        // display: block;
+        // margin: 0 auto;
+        position: absolute; 
+        text-align: left;
+        bottom: 30px;
+        left: 20px;
         line-height: 1;
         font-family: 'Montserrat', sans-serif;
         font-size: 3rem;
@@ -41,6 +49,9 @@ figure .caption {
     p {
         font-family: 'Roboto', sans-serif;
         font-size: 1rem;
+        position: absolute; 
+        bottom: 0px;
+        left: 20px;
     }
 }
   
